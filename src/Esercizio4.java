@@ -6,16 +6,14 @@ public class Esercizio4 {
         System.out.print("Inserisci un numero intero: ");
         int n = input.nextInt();
         input.close();
-        System.out.println(contoAllaRovescia(n));
+        contoAllaRovescia(n);
     }
 
-    public static int contoAllaRovescia(int n) {
+    public static void contoAllaRovescia(int n) {
         int x = n;
-        while (x > 0) {
-
+        while (x >= 0) {
+            System.out.println(x);
             x--;
-            System.out.println(x+1);
         }
-        return x;
     }
 }
